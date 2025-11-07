@@ -1,0 +1,90 @@
+.bookmarkcards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 10px;
+    margin-top: 30px;
+}
+.card{
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EBEDEC;
+}
+.card-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+.title{
+    display: flex;
+    gap: 10px;
+}
+.title-text h3{
+    color: #08443E;
+}
+.title-text p{
+    color: #08443E;
+    font-size: 14px;
+    font-weight: 300;
+}
+.btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #08443E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.paragraph{
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+    padding-top: 8px;
+}
+.lang-type{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EBEDEC;
+}
+.lang{
+    background-color: #E7EFEE;
+    padding: 1px 4px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #08443E;
+    font-weight: 300;
+    cursor: pointer;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 10px;
+}
+.details{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.foot-group{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.foot-group span{
+    color: #08443E;
+    font-size: 13px;
+    font-weight: 300;
+}

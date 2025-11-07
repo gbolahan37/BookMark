@@ -1,0 +1,20 @@
+.contentheader{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+}
+.contentheader h3{
+    color: #08443E;
+}
+.sort-btn{
+    padding: 5px 7px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #08443E;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}

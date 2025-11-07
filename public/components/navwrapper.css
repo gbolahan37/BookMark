@@ -1,0 +1,7 @@
+.navwrapper{
+    display: flex;
+    gap: 1px;
+}
+.main{
+    flex-grow: 1;
+}

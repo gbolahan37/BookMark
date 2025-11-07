@@ -1,0 +1,43 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 10px 16px;
+}
+.search-bar{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 6px;
+}
+.search-input{
+    background-color: transparent;
+    border: none;
+    padding: 4px;
+    color: black;
+}
+.search-input:focus{
+    outline: none;
+}
+.nav-btn{
+    background-color: #08443E;
+    padding: 12px 28px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}

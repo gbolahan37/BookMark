@@ -1,0 +1,22 @@
+.tag{
+    margin-top: 30px;
+}
+.tag h4{
+    color: gray;
+    font-weight: 400;
+}
+.tag-list{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.tag-group{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 20px;
+}
+.tag-group label{
+    color: gray;
+    font-size: 14px;
+}
