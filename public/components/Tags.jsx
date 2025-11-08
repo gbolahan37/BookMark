@@ -3,7 +3,7 @@ import './tag.css'
 const Tag = ({tagname}) =>{
     return(
         <div className="tag-group">
-            <input type="checkbox" />
+            <input type="checkbox" className='checky' />
             <label htmlFor="">{tagname}</label>
         </div>
     )

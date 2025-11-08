@@ -4,6 +4,22 @@
     align-items: center;
     background-color: #FFFFFF;
     padding: 10px 16px;
+    gap: 32px;
+}
+.ham{
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+
+    @media (max-width: 640px) {
+        display: flex;
+    }
 }
 .search-bar{
     display: flex;
@@ -12,23 +28,30 @@
     border: 1px solid black;
     border-radius: 7px;
     padding: 6px;
+    max-width: 500px;
 }
 .search-input{
     background-color: transparent;
     border: none;
     padding: 4px;
     color: black;
+    width: 100%;
 }
 .search-input:focus{
     outline: none;
 }
 .nav-btn{
     background-color: #08443E;
-    padding: 12px 28px;
+    padding: 12px 20px;
     border-radius: 6px;
     border: none;
     font-size: 16px;
     cursor: pointer;
+}
+.nav-btn span{
+    @media (max-width: 570px) {
+        display: none;
+    }
 }
 .left-nav{
     display: flex;

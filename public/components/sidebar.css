@@ -2,6 +2,10 @@
     padding: 20px;
     background-color: #FFFFFF;
     max-width: 350px;
+
+    @media (max-width: 640px) {
+        display: none;
+    }
 }
 .logo{
     display: flex;
