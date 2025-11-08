@@ -3,7 +3,7 @@ import './bookmarkcards.css'
 
 
 
-const Cards = ({title, link, para , label, type, Comm, views, time, date, imgSrc}) =>{
+const Cards = ({title, link, para , label, type, Comm, views, time, date, imgSrc, MDm}) =>{
     return(
         <div className="card">
             <div className="card-header">
@@ -25,6 +25,7 @@ const Cards = ({title, link, para , label, type, Comm, views, time, date, imgSrc
                 <div className="lang">{label}</div>
                 <div className="lang">{type}</div>
                 <div className="lang">{Comm}</div>
+                <div className="lang">{MDm}</div>
             </div>
             <div className='card-footer'>
                 <div className="details">
@@ -54,7 +55,7 @@ function Bookmarkcards() {
         link="frontend.io" label= 'Practices' type="Learning" Comm="Community" views="47" time="25 Sep" date="15 Jan" />
         
         <Cards imgSrc="/Screenshot 2025-11-07 163755.png" title="MDN Web Docs" para="The MDN Web Docs site provides information about Open web tecnologies including HTML, CSS and APIs for both Web sites and progressive web apps." 
-        link="developer.mozila.org" label= 'Reference' type="HTML" Comm="CSS" views="157" time="24 Sep" date="10 Jan" />
+        link="developer.mozila.org" label= 'Reference' type="HTML" Comm="CSS" MDm="javaScript" views="157" time="24 Sep" date="10 Jan" />
         
         <Cards imgSrc="/react.png" title="React" para="The libery for web and native user interfaces. Build user interfaces out of individual pieces called conponents." 
         link="react.dev" label= 'JavaScript' type="Framework" Comm="Reference" views="0" time="Never" date="20 Feb" />
