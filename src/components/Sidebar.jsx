@@ -3,17 +3,26 @@ import Tags from './Tags'
 
 const Links = ({ label, icon}) => {
     return(
-
-            <div className="link-group">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000000" viewBox="0 0 256 256"><path d={icon}></path></svg>
-                <li><a href="">{label}</a></li>
-            </div>
-
+        <div className="link-group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000000" viewBox="0 0 256 256"><path d={icon}></path></svg>
+            <li><a href="">{label}</a></li>
+        </div>
     )
 }
-function Sidebar() {
+function Sidebar({ sidebarVisibility }) {
+
+    const [visible, setVisible] = sidebarVisibility
+
+    function closeClick (){
+        console.log("Hurry")
+        setVisible(false)
+    }
+
   return (
-    <div className="sidebar">
+    visible && <div className="sidebar">
+        <div className="close-btn" onClick={closeClick}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+        </div>
         <div className="logo">
             <div className="logo-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#FFFFFF" viewBox="0 0 256 256"><path d="M184,32H72A16,16,0,0,0,56,48V224a8,8,0,0,0,12.24,6.78L128,193.43l59.77,37.35A8,8,0,0,0,200,224V48A16,16,0,0,0,184,32Zm0,177.57-51.77-32.35a8,8,0,0,0-8.48,0L72,209.57V48H184Z"></path></svg>
