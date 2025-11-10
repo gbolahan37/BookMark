@@ -1,12 +1,12 @@
 import './App.css'
-import NavWrapper from '../public/components/NavWrapper'
+import Wrapper from './components/Wrapper'
 
 function App() {
   
 
   return (
     <>
-     <NavWrapper />
+     <Wrapper />
     </>
   )
 }

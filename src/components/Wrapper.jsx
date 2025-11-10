@@ -1,12 +1,12 @@
-import './navwrapper.css'
+import './wrapper.css'
 import Sidebar from './Sidebar'
 import Navbar from './Navbar'
 import Content from './Content'
 
-function NavWrapper() {
+function Wrapper() {
   return (
     <>
-    <div className="navwrapper">
+    <div className="wrapper">
         <Sidebar />
         <div className="main">
           <Navbar />
@@ -17,4 +17,4 @@ function NavWrapper() {
   )
 }
 
-export default NavWrapper
+export default Wrapper

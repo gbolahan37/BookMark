@@ -4,7 +4,11 @@
     max-width: 350px;
 
     @media (max-width: 640px) {
-        display: none;
+        display: block;
+        position: absolute;
+        max-width: 200px;
+        bottom: 0;
+        top: 0;
     }
 }
 .logo{
